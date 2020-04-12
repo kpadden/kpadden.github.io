@@ -71,4 +71,34 @@ title: Practice
     <h4><span color="0000FF">My Media</span></h4>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RoEyHxsLYmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<div style="background-color:red; color:black; padding:60px">
+    <h4>GeoLocation API</h4><br/>
+    <h2 color="grey">Source code: W3School,SoloLearn comments</h3><br/>
+    <p>Get your coordinates</p><br/>
+    <button onclick="getLocation()">Get location</button><br/>
+    <p id="demo"></p><br/>
+    <script>
+        var x = document.getElementByld("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br/>Longitude: " + position.coords.longitude;
+        }
+    </script>
+    <br/>
+    <script>
+        var y = document.getElementByld("demo");
+        function showPosition(position) {
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+            document.getElementByld("mapholder").innerHTML = "<img src='"+img_url+"'>";
+        }
+    </script>
+</div>
 <br/>
