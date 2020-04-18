@@ -1,18 +1,47 @@
 body { 
     margin: 60px auto; 
     width: 70%; 
-    background-color: #f8f8f8;
+    background-color: #005080;
 } 
 
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 60px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/*
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
     background-color: #005080;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;
     padding-top: 60px;
 }
 
@@ -32,7 +61,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+*/
 footer ul {
     font-size: 1em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif'; 
