@@ -5,12 +5,12 @@ body {
 } 
 
 section {
-    margin: 0px 80px;
+    margin: 80px;
     background-color: #e8e8e8;
 }
 
 div {
-    padding: 20px 40px;
+    margin: 60px;
 }
 
 .topnav {
