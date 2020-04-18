@@ -1,11 +1,14 @@
-body { 
-    margin: 60px auto; 
+body {
     background-color: #005080;
 } 
 
 section {
     margin: 0px 40px;
     background-color: #e8e8e8;
+}
+
+div {
+    margin: 20px 40px;
 }
 
 .topnav {
