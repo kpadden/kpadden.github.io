@@ -1,26 +1,35 @@
 body {
     margin: 0px auto;
-    width: 70%;
+    width: 100%; /*70*/
     /*background-color: #005080;*/
     background-color: #eee;
 } 
 
-div {
-    /*margin: 30px 74px;
-    padding: 0px 40px;*/
+div { /*all comments */
+    margin: 0;
+    padding: 0;
     /*background-color: #e8e8e8;*/
 }
 
 .container {
+    width: 70%; /*margin: 0px atuo;*/
     padding: 0px 40px 40px 40px;
     background-color: #f8f8f8;
 }
 
 .topnav {
-    margin: 0px;
-    width: 100%;
+    /*margin: 0px auto;
+    width: 100%;*/
     background-color: #333;
     overflow: hidden;
+}
+
+.inside-topnav {
+    width: 70%;
+}
+
+.inside-footer {
+    width: 70%;
 }
 
 /* Style the links inside the navigation bar */
