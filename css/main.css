@@ -12,9 +12,14 @@ div { /*all comments */
 }
 
 .container {
+    margin: 0px auto;
     width: 70%; /*margin: 0px atuo;*/
-    padding: 0px 40px 40px 40px;
+    /*padding: 0px 40px 40px 40px;*/
     background-color: #f8f8f8;
+}
+
+.inside-container {
+    padding: 0px 40px 40px 40px;
 }
 
 .topnav {
@@ -25,10 +30,12 @@ div { /*all comments */
 }
 
 .inside-topnav {
+    margin: 0px auto;
     width: 70%;
 }
 
 .inside-footer {
+    margin: 0px auto;
     width: 70%;
 }
 
