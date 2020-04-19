@@ -1,7 +1,8 @@
 body {
     margin: 0px auto;
     width: 70%;
-    background-color: #005080;
+    /*background-color: #005080;*/
+    background-color: #eee;
 } 
 
 div {
@@ -12,7 +13,7 @@ div {
 
 .container {
     padding: 0px 40px 40px 40px;
-    background-color: #eee;
+    background-color: #f1f1f1;
 }
 
 .topnav {
