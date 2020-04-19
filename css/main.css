@@ -1,12 +1,12 @@
 body {
     margin: auto;
-    width: 70%;
+    width: 100%;
     background-color: #005080;
 } 
 
 div {
-    margin: 0px 60px;
-    width: 70%;
+    margin: 30px 74px;
+    padding: 0px 40px;
     background-color: #e8e8e8;
 }
 
@@ -91,7 +91,7 @@ footer ul {
 
 footer ul li { 
     display: inline; 
-    margin-right: 20px; 
+    margin: 0px 20px; 
 } 
 
 a { 
