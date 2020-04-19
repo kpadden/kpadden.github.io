@@ -43,7 +43,7 @@ div {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 40px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -130,13 +130,13 @@ footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif'; 
     padding: 0px; 
     list-style: none; 
-    font-weight: bold; 
+    font-weight: bold;
+    margin-inline-start: 40px;
 } 
 
 footer ul li { 
     display: inline; 
-    margin-right: 8px;
-    margin-left: 16px;
+    margin-right: 20px;
 } 
 
 a { 
