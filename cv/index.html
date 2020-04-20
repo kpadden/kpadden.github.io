@@ -2,6 +2,26 @@
 layout: default
 title: Resume
 ---
+<div class="topnav">
+    <div class="inside-topnav" id="myTopnav">
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/cv">Resume</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+</div>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "inside-topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "inside-topnav";
+        }
+    }
+</script>
 <div class="cv">
     <a href="#" class="download" title="Download Resume as PDF">Download Resume</a>
     <h1>Resume</h1>
