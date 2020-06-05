@@ -2,34 +2,52 @@
 layout: default
 title: Kenneth Padden
 ---
-<div class="topnav">
-    <div class="inside-topnav" id="myTopnav">
-        <a href="/" class="active">Home</a>
-        <a href="/about">About</a>
-        <a href="/cv">Resume</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<body>
+    <div class="topnav">
+        <div class="inside-topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/cv">Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
     </div>
-</div>
-<div class="blurb">
-    <h1>Kenneth Padden</h1> 
-    <p>&emsp;&emsp;Hello! I am Kenneth (Kenny) Padden. I am an Eagle Scout, two time UC San Diego Men's Rowing Team Captain, and two time Intern at Verizon Media Services (Yahoo!). I have a passion for working with teams, building on any platform, and a track record of converting products from MVPs (<i>minimum viable products</i>) to MLPs (<i>minimum loveable products</i>) and <em>beyond!</em> Currently looking for high impact work in Product Management post graduation June 2020<br/><a href="/about">More about me...</a></p> 
-</div>
-<div>
-    <h2>My Projects</h2>
-    <div>
-        <h4>1968 Mustang Coupe</h4>
-        <p>Blurb on mustang restoration. Click the photo to continue.</p>
-        <a href="/mustang-restoration"><img src="/photos/Mustang done.PNG" alt="Finished restoration" style="width:40%;hieght:30%;"/></a>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "inside-topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "inside-topnav";
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="inside-container"><br/>
+            <div class="blurb">
+                <h1>Kenneth Padden</h1> 
+                <p>&emsp;&emsp;Hello! I am Kenneth (Kenny) Padden. I am an Eagle Scout, two time UC San Diego Men's Rowing Team Captain, and two time Intern at Verizon Media Services (Yahoo!). I have a passion for working with teams, building on any platform, and a track record of converting products from MVPs (<i>minimum viable products</i>) to MLPs (<i>minimum loveable products</i>) and <em>beyond!</em> Currently looking for high impact work in Product Management post graduation June 2020<br/><a href="/about">More about me...</a></p> 
+            </div>
+            <div>
+                <h2>My Projects</h2>
+                <div>
+                    <h4>1968 Mustang Coupe</h4>
+                    <p>Blurb on mustang restoration. Click the photo to continue.</p>
+                    <a href="/mustang-restoration"><img src="/photos/Mustang done.PNG" alt="Finished restoration" style="width:40%;hieght:30%;"/></a>
+                </div>
+                <div>
+                    <h4>Mobile Information System</h4>
+                    <p>Blurb on class project</p>
+                    <a href="/mobile-information-system">Click here!<img src=""/></a>
+                </div>
+                <div>
+                    <h4>Verizon Media (Yahoo!)</h4>
+                    <p>Descriptions of my internship projects</p>
+                    <a href="/verizon-media-internships">Click here!<img src=""/></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <h4>Mobile Information System</h4>
-        <p>Blurb on class project</p>
-        <a href="/mobile-information-system">Click here!<img src=""/></a>
-    </div>
-    <div>
-        <h4>Verizon Media (Yahoo!)</h4>
-        <p>Descriptions of my internship projects</p>
-        <a href="/verizon-media-internships">Click here!<img src=""/></a>
-    </div>
-</div>
+</body>
 <!-- /.blurb --> 
