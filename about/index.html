@@ -2,26 +2,53 @@
 layout: default
 title: About Me
 ---
-<div class="topnav">
-    <div class="inside-topnav" id="myTopnav">
-        <a href="/">Home</a>
-        <a href="/about" class="active">About</a>
-        <a href="/cv">Resume</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<body>
+    <div class="topnav">
+        <div class="inside-topnav" id="myTopnav">
+            <a href="/">Home</a>
+            <a href="/about" class="active">About</a>
+            <a href="/cv">Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
     </div>
-</div>
-<div class="about">
-    <h1>About</h1>
-    <p>&emsp;&emsp;Hello, I am Kenneth (Kenny) Padden. I am a 4th year <i>Cognitive Science Major</i> at the <ins>University of California, San Diego</ins> as well as a four year <i>Student-Athlete</i> on UCSD Men's Rowing (2x team captain).</p>
-    <p>I have a passion for building:</p>
-    <ul>
-        <li>Car Restorations</li>
-        <li>Woodworking Projects</li>
-        <li>Web Based Products</li>
-    </ul><br/>
-    <h3>Work Experience</h3>
-    <p>&emsp;&emsp;I interned at Oath (Yahoo!) and Verizon Media (Yahoo!) as a product designer. I was given many diverse roles with various teams by asking for a challenge, demonstraighting command of my workload, and saying yes to every opportunity that arose. Products I made significant contributions to during these two internships were (1) Verizon’s internal version of AutoML, (2) Yahoo!’s pawned password check and new login flow (including research lab interviews and AB testing for 2FA), (3) alternative logic for Yahoo!’s recovery channel obfuscation during account recovery, (4) LastPass partnership upsells in Identity flows, and (5) the redesign of Yahoo!’s Member Center!</p><br/>
-    <h3>Take Aways</h3>
-    <p>&emsp;&emsp;I was fortunate enough to partake in a deep dive on <i>Machine Learning</i> early in my career. The work I completed in this field emphasizes technical research, intergration of machine learning use cases, and industry leading product development. Additionally, my work in automotive restoration has not been a contravention to iterative product design and delivery. I've learned more about research, roadmaps (no pun intended), and improvising real solutions over the course of three end to end restoration projects.</p>
-    <p>&emsp;&emsp;In the office have met incredible people from around the world, contributed to major products, and had the privledge of adding delight to the experience of millions of daily active users. At home in the garage I have learned task management, overcome multiple engineering challenges, and understood the value of hard work. These valuable learnings and lessons have shaped who I am and my problem solving framework.</p>
-</div>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "inside-topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "inside-topnav";
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="inside-container"><br/>
+            <div class="about">
+                <h1>About</h1>
+                <p>&emsp;&emsp;Hello, I am Kenneth (Kenny) Padden. I am a 4th year <i>Cognitive Science Major</i> at the <ins>University of California, San Diego</ins> as well as a four year <i>Student-Athlete</i> on UCSD Men's Rowing (2x team captain).</p>
+                <p>I have a passion for building:</p>
+                <ul>
+                    <li>Car Restorations</li>
+                    <li>Woodworking Projects</li>
+                    <li>Web Based Products</li>
+                </ul><br/>
+                <h3>Work Experience</h3>
+                <p>&emsp;&emsp;I interned at Oath (Yahoo!) and Verizon Media (Yahoo!) as a product designer. I was given many diverse roles with various teams by asking for a challenge, demonstraighting command of my workload, and saying yes to every opportunity that arose. Products I made significant contributions to during these two internships were (1) Verizon’s internal version of AutoML, (2) Yahoo!’s pawned password check and new login flow (including research lab interviews and AB testing for 2FA), (3) alternative logic for Yahoo!’s recovery channel obfuscation during account recovery, (4) LastPass partnership upsells in Identity flows, and (5) the redesign of Yahoo!’s Member Center!</p><br/>
+                <h3>Take Aways</h3>
+                <p>&emsp;&emsp;I was fortunate enough to partake in a deep dive on <i>Machine Learning</i> early in my career. The work I completed in this field emphasizes technical research, intergration of machine learning use cases, and industry leading product development. Additionally, my work in automotive restoration has not been a contravention to iterative product design and delivery. I've learned more about research, roadmaps (no pun intended), and improvising real solutions over the course of three end to end restoration projects.</p>
+                <p>&emsp;&emsp;In the office have met incredible people from around the world, contributed to major products, and had the privledge of adding delight to the experience of millions of daily active users. At home in the garage I have learned task management, overcome multiple engineering challenges, and understood the value of hard work. These valuable learnings and lessons have shaped who I am and my problem solving framework.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="inside-footer">
+            <ul> 
+                <li><a href="mailto:kepadden@gmail.com">email</a></li> 
+                <li><a href="https://linkedin.com/in/kenny-padden-a64329170">LinkedIn</a></li>
+                <li><a href="https://github.com/kpadden">github.com/kpadden</a></li> 
+            </ul>
+        </div>
+    </footer>
+</body>
