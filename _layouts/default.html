@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!--<div class="topnav">
+        <div class="topnav">
             <div class="inside-topnav" id="myTopnav">
                 <a href="/" class="active">Home</a>
                 <a href="/about">About</a>
@@ -21,14 +21,14 @@
             /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
             function myFunction() {
                 var x = document.getElementById("myTopnav");
-                if (x.className === "inside-topnav") {
+                if (x.className == "inside-topnav") {
                     x.className += " responsive";
                 }
                 else {
                     x.className = "inside-topnav";
                 }
             }
-        </script>-->
+        </script>
         <div class="container">
             <div class="inside-container"><br/>
                 {{ content }} 
