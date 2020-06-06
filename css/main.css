@@ -215,3 +215,8 @@ ul.posts li {
     text-transform: uppercase;
     color: #4CAF50;
 }
+
+img .mustang1 {
+  position: absolute;
+  clip: rect(0px,60px,20px,0px);
+}
