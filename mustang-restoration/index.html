@@ -2,89 +2,116 @@
 layout: default
 title: Mustang Restoration
 ---
-<div class="topnav">
-    <div class="inside-topnav" id="myTopnav">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/cv">Resume</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<body>
+    <div class="topnav">
+        <div class="inside-topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="/about">About</a>
+            <a href="/cv">Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
     </div>
-</div>
-<div class="mustang-restoration">
-    <h1>Mustang Restoration</h1>
-    <div>
-        <img src="/photos/Mustang untouched"/>
-        <img src="photos/Mustang done"/>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "inside-topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "inside-topnav";
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="inside-container"><br/>-->
+            <div class="mustang-restoration">
+                <h1>Mustang Restoration</h1>
+                <div>
+                    <img src="/photos/Mustang untouched"/>
+                    <img src="photos/Mustang done"/>
+                </div>
+                <h3>Overview/Background</h3>
+                <p>A vehicle restoration is a process conducted by professionals and everyday hobbyists alike. Under the realm of hobbyist restorations, motor vehicles of all sorts receive TLC (Tough Love & Care) from their owners who are extremely proud of their work. I fall under the category of hobbyist and am looking to find a car, fix it up the best I can with help from my father, and then sell it to the next buyer who can take the project further on a larger budget. All the while learning the craft of being a home mechanic and enjoying the fruits of my labor when taking the car out on the town.</p>
+                <h3>Problem Statement</h3>
+                <p>How might we build a car that runs great, drives great, boasts it’s proud heritage, and is worth more to someone else than what we put into the restoration?</p>
+                <h3>User Research/Needfing</h3>
+                <p>Going to swap meets or other local car clubs and shows provides a great resource for finding niche ideas or concepts for restoration models as well as networking opportunities for rare parts or uncommon need to know information.</p>
+                <p>Goals (hierarchically ranked):</p>
+                <ol>
+                    <li>Learn & have fun</li>
+                    <li>Sell for a profit</li>
+                    <li>Complete in a year</li>
+                </ol>
+                <p>Buying a classic car for under $3k is not worth it and will take too many major fixes to get it running and presentable (hinders goal #3). Buying a car for >$15k doesn’t leave enough room for projects I can complete and want to undertake during the restoration (hindering goal #1). This would also decrease my ability to sell the project at a later date for a profit (hinders goal #2). If I aim to sell the car for $15-20k at the conclusion of the restoration and have it be worth every penny, I will need to find a car that has not had a lot of work completed on it, is relatively stock, and will have to consider less desirable models as my research has shown that a powder coated frame of some classic cars can fetch $15k easy. This finance constraint leaves me with a ~$10k budget for the entire project.</p>
+                <h3>User Personas</h3>
+                <li>Hobbyist</li>
+                <li>Has appreciation of car culture and vintage muscle cars</li>
+                <li>Likes to tinker and can handle any leftover engineering projects</li>
+                <li>Has the means to purchase the car in a near completed state and can take it further if desired</li>
+                <li>Expert</li>
+                <li>A shop owner who can use their resources to upgrade the car’s platforms</li>
+                <li>Looking to build out the car further with industry spec materials and tools</li>
+                <li>Will either use the car as their daily driver or will flip to higher end clientele</li>
+                <h3>Competetive Audit</h3>
+                <p>pic here</p>
+                <h3>Storyboards</h3>
+                <p>Tale of the restorer</p>
+                <li>Actively scours the web for great deals on cars with high potential</li>
+                <li>Follows up on leads related to cars listed, not listed, and rumors of cars long forgotten (barn finds)</li>
+                <li>Conducts online research of car specs, options, and historic values</li>
+                <li>Purchases the right car for their purposes</li>
+                <li>Sets a budget based on purchase price and intended sell point</li>
+                <li>Diagnoses entire car with 100 point inspection</li>
+                <li>Decides weather to go all in or get out now</li>
+                <li>Bulk orders major parts that can’t be found in a local junk yard or refurbished and sold online</li>
+                <li>Addresses mechanical issues to get the car running, driving, and stopping like it should</li>
+                <li>Once again evaluates if it is wise to continue on or sell based on budget chewed up by mechanical work</li>
+                <li>Paint and body issues are addressed (where the majority of value to most potential customers lies)</li>
+                <li>Interior overhaul, finally addressing the operating user interface of the vehicle (some of the most satisfying work you can do)</li>
+                <li>Once again reviews budget, spending, and value trends</li>
+                <li>Offers to public at reasonable-high price</li>
+                <li>Engages with potential buyers who can negotiate a good price and show interest in further caring for the restoration project</li>
+                <p>Tale of the final buyer:</p>
+                <li>Individual is actively looking for a classic car</li>
+                <li>They check online (Craigslist, BringATrailer, OfferUp, etc)</li>
+                <li>They drive past the line of for sale cars in town</li>
+                <li>See the restored Mustang, stop and check it out</li>
+                <li>Contact me (the seller)</li>
+                <li>Give them a test drive and talk over the work that has been completed on the car</li>
+                <li>Talk price and negotiate</li>
+                <li>Arrive at an agreeable price for both parties</li>
+                <li>Exchange payment / legal transfer of ownership</li>
+                <h3>Low-fidelity Prototypes</h3>
+                <p>There were many ideas that wound their way into the restoration process. From the start I reviewed the one hundred point inspection to get an idea of what work could be immediately identified and completed. This was then used to create an itinerary with the major projects. From this list of level one priority items, a budget could be formed and additional projects could be incorporated and planned out. A critical portion of creating the budget was to complete research online and in catalogs for available parts and prices. Knowing the priority items beforehand was very useful in this research as I could reference my budget and make sure certain things were prioritized.</p>
+                <h3>User Testing</h3>
+                <p>Much of the user testing with this restoration project consisted of comments and anecdotes from family, neighbors, and complete strangers on the road. These individuals span two major categories:</p>
+                <li>Those that have seen the progression of the car</li>
+                <li>Those that are seeing the car for the first time</li>
+                <p>This feedback was collected and shared between my father and I as we continued to build the car as we felt would be best suited for our end consumer. Examples of significant course changes and projects informed by feedback were:</p>
+                <li>The decision to paint the engine bay ourselves</li>
+                <li>Adding 2” risers rear leaf springs</li>
+                <li>Installing chrome side skirts</li>
+                <li>Replacing the rear valance panel with a CS (California Special) edition w/ exhaust cutouts, then lifting the exhaust ports to fit</li>
+                <li>The decision to buff and wax the paint back to instead of going with a full paint job</li>
+                <h3>Alternate Designs</h3>
+                <p>There are a wide variety of examples of classic mustangs spanning the internet. These examples pictured provide excellent visuals that help tie together the vision for the restored car.</p>
+                <p>The cars pictured above show a tame variety of restored mustangs all from 1968. With customization and fabrication work, the sky's the limit on what can be created. The base of the car I am restoring is ‘Tahoe Turquoise’ like cars 1 & 2, stanced like cars 2 & 3, is a coupe edition like cars 3 & 4, and has stock trim options like car 3. These examples are really only scraping the surface of the possible looks of the car, there are plenty more considerations such as engine, drivetrain, brakes, suspension, interior, sound system, electrical, and many other plastic/rubber/metal components all with stock, deluxe, and performance options available. Who’s to say we don’t completely change the look and feel of the car with a new paint job, create a sportier ride quality with synthetic instead of rubber bushings, or even invest in a beefier camshaft to increase power from the engine. My camera roll is littered with pictures of cool things I have seen on other project cars and my notes app contains many anecdotes on important tidbits of information I have picked up from talking to other restoration enthusiasts. Stories of these potential projects are ever present on the web and provide motivation and direction to the possibilities as work takes place.</p>
+                <h3>High-fidelity Prototypes</h3>
+                <p>The car takes shape as more projects are completed, here are major milestones in the form of before and after photos.</p>
+                <h3>Final Reflections</h3>
+                <p>This was my second restoration project after the 1987 Camaro my dad and I fixed up when I was 15. Many of the major projects we completed on the Camaro were also undertaken on the Mustang. These include suspension, injectors/carburetors, interior, water pumps, door pins, window regulators, piles of bushings, weather stripping, spark plugs & wiring, brakes, and steering wheels. The experience working on the Camaro played a huge role in our learning curve on the Mustang and proved invaluable.</p>
+                <p>We ended up selling the car to a father and son. The kid was 15 and there were still a few projects to complete on the car. My dad and I thought they were a great pair to pass the car onto. Our total investment, including original purchase price, was just over $10k and a whole lot of hours spent between the driveway and garage. We came out slightly over our initial budget, but we made a profit and really enjoyed the process.</p>
+            </div>
+        </div>
     </div>
-    <h3>Overview/Background</h3>
-    <p>A vehicle restoration is a process conducted by professionals and everyday hobbyists alike. Under the realm of hobbyist restorations, motor vehicles of all sorts receive TLC (Tough Love & Care) from their owners who are extremely proud of their work. I fall under the category of hobbyist and am looking to find a car, fix it up the best I can with help from my father, and then sell it to the next buyer who can take the project further on a larger budget. All the while learning the craft of being a home mechanic and enjoying the fruits of my labor when taking the car out on the town.</p>
-    <h3>Problem Statement</h3>
-    <p>How might we build a car that runs great, drives great, boasts it’s proud heritage, and is worth more to someone else than what we put into the restoration?</p>
-    <h3>User Research/Needfing</h3>
-    <p>Going to swap meets or other local car clubs and shows provides a great resource for finding niche ideas or concepts for restoration models as well as networking opportunities for rare parts or uncommon need to know information.</p>
-    <p>Goals (hierarchically ranked):</p>
-    <ol>
-        <li>Learn & have fun</li>
-        <li>Sell for a profit</li>
-        <li>Complete in a year</li>
-    </ol>
-    <p>Buying a classic car for under $3k is not worth it and will take too many major fixes to get it running and presentable (hinders goal #3). Buying a car for >$15k doesn’t leave enough room for projects I can complete and want to undertake during the restoration (hindering goal #1). This would also decrease my ability to sell the project at a later date for a profit (hinders goal #2). If I aim to sell the car for $15-20k at the conclusion of the restoration and have it be worth every penny, I will need to find a car that has not had a lot of work completed on it, is relatively stock, and will have to consider less desirable models as my research has shown that a powder coated frame of some classic cars can fetch $15k easy. This finance constraint leaves me with a ~$10k budget for the entire project.</p>
-    <h3>User Personas</h3>
-    <li>Hobbyist</li>
-    <li>Has appreciation of car culture and vintage muscle cars</li>
-    <li>Likes to tinker and can handle any leftover engineering projects</li>
-    <li>Has the means to purchase the car in a near completed state and can take it further if desired</li>
-    <li>Expert</li>
-    <li>A shop owner who can use their resources to upgrade the car’s platforms</li>
-    <li>Looking to build out the car further with industry spec materials and tools</li>
-    <li>Will either use the car as their daily driver or will flip to higher end clientele</li>
-    <h3>Competetive Audit</h3>
-    <p>pic here</p>
-    <h3>Storyboards</h3>
-    <p>Tale of the restorer</p>
-    <li>Actively scours the web for great deals on cars with high potential</li>
-    <li>Follows up on leads related to cars listed, not listed, and rumors of cars long forgotten (barn finds)</li>
-    <li>Conducts online research of car specs, options, and historic values</li>
-    <li>Purchases the right car for their purposes</li>
-    <li>Sets a budget based on purchase price and intended sell point</li>
-    <li>Diagnoses entire car with 100 point inspection</li>
-    <li>Decides weather to go all in or get out now</li>
-    <li>Bulk orders major parts that can’t be found in a local junk yard or refurbished and sold online</li>
-    <li>Addresses mechanical issues to get the car running, driving, and stopping like it should</li>
-    <li>Once again evaluates if it is wise to continue on or sell based on budget chewed up by mechanical work</li>
-    <li>Paint and body issues are addressed (where the majority of value to most potential customers lies)</li>
-    <li>Interior overhaul, finally addressing the operating user interface of the vehicle (some of the most satisfying work you can do)</li>
-    <li>Once again reviews budget, spending, and value trends</li>
-    <li>Offers to public at reasonable-high price</li>
-    <li>Engages with potential buyers who can negotiate a good price and show interest in further caring for the restoration project</li>
-    <p>Tale of the final buyer:</p>
-    <li>Individual is actively looking for a classic car</li>
-    <li>They check online (Craigslist, BringATrailer, OfferUp, etc)</li>
-    <li>They drive past the line of for sale cars in town</li>
-    <li>See the restored Mustang, stop and check it out</li>
-    <li>Contact me (the seller)</li>
-    <li>Give them a test drive and talk over the work that has been completed on the car</li>
-    <li>Talk price and negotiate</li>
-    <li>Arrive at an agreeable price for both parties</li>
-    <li>Exchange payment / legal transfer of ownership</li>
-    <h3>Low-fidelity Prototypes</h3>
-    <p>There were many ideas that wound their way into the restoration process. From the start I reviewed the one hundred point inspection to get an idea of what work could be immediately identified and completed. This was then used to create an itinerary with the major projects. From this list of level one priority items, a budget could be formed and additional projects could be incorporated and planned out. A critical portion of creating the budget was to complete research online and in catalogs for available parts and prices. Knowing the priority items beforehand was very useful in this research as I could reference my budget and make sure certain things were prioritized.</p>
-    <h3>User Testing</h3>
-    <p>Much of the user testing with this restoration project consisted of comments and anecdotes from family, neighbors, and complete strangers on the road. These individuals span two major categories:</p>
-    <li>Those that have seen the progression of the car</li>
-    <li>Those that are seeing the car for the first time</li>
-    <p>This feedback was collected and shared between my father and I as we continued to build the car as we felt would be best suited for our end consumer. Examples of significant course changes and projects informed by feedback were:</p>
-    <li>The decision to paint the engine bay ourselves</li>
-    <li>Adding 2” risers rear leaf springs</li>
-    <li>Installing chrome side skirts</li>
-    <li>Replacing the rear valance panel with a CS (California Special) edition w/ exhaust cutouts, then lifting the exhaust ports to fit</li>
-    <li>The decision to buff and wax the paint back to instead of going with a full paint job</li>
-    <h3>Alternate Designs</h3>
-    <p>There are a wide variety of examples of classic mustangs spanning the internet. These examples pictured provide excellent visuals that help tie together the vision for the restored car.</p>
-    <p>The cars pictured above show a tame variety of restored mustangs all from 1968. With customization and fabrication work, the sky's the limit on what can be created. The base of the car I am restoring is ‘Tahoe Turquoise’ like cars 1 & 2, stanced like cars 2 & 3, is a coupe edition like cars 3 & 4, and has stock trim options like car 3. These examples are really only scraping the surface of the possible looks of the car, there are plenty more considerations such as engine, drivetrain, brakes, suspension, interior, sound system, electrical, and many other plastic/rubber/metal components all with stock, deluxe, and performance options available. Who’s to say we don’t completely change the look and feel of the car with a new paint job, create a sportier ride quality with synthetic instead of rubber bushings, or even invest in a beefier camshaft to increase power from the engine. My camera roll is littered with pictures of cool things I have seen on other project cars and my notes app contains many anecdotes on important tidbits of information I have picked up from talking to other restoration enthusiasts. Stories of these potential projects are ever present on the web and provide motivation and direction to the possibilities as work takes place.</p>
-    <h3>High-fidelity Prototypes</h3>
-    <p>The car takes shape as more projects are completed, here are major milestones in the form of before and after photos.</p>
-    <h3>Final Reflections</h3>
-    <p>This was my second restoration project after the 1987 Camaro my dad and I fixed up when I was 15. Many of the major projects we completed on the Camaro were also undertaken on the Mustang. These include suspension, injectors/carburetors, interior, water pumps, door pins, window regulators, piles of bushings, weather stripping, spark plugs & wiring, brakes, and steering wheels. The experience working on the Camaro played a huge role in our learning curve on the Mustang and proved invaluable.</p>
-    <p>We ended up selling the car to a father and son. The kid was 15 and there were still a few projects to complete on the car. My dad and I thought they were a great pair to pass the car onto. Our total investment, including original purchase price, was just over $10k and a whole lot of hours spent between the driveway and garage. We came out slightly over our initial budget, but we made a profit and really enjoyed the process.</p>
-</div>
+    <footer>
+        <div class="inside-footer">
+            <ul> 
+                <li><a href="mailto:kepadden@gmail.com">email</a></li> 
+                <li><a href="https://linkedin.com/in/kenny-padden-a64329170">LinkedIn</a></li>
+                <li><a href="https://github.com/kpadden">github.com/kpadden</a></li> 
+            </ul>
+        </div>
+    </footer>
+</body>
